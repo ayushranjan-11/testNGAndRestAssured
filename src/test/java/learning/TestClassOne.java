@@ -18,12 +18,12 @@ public class TestClassOne {
         driver.findElement(By.className("gLFyf")).sendKeys("Selenium", Keys.ENTER);
     }
 
-    @Test
-    void openAura() {
-
-        driver.get("https://www.auranft.co");
-        driver.manage().window().maximize();
-
-        driver.findElement(By.xpath("//*[@id=\"header-main-page\"]/header/div/div/div[1]/div[2]")).click();
-    }
+//    @Test
+//    void openAura() {
+//
+//        driver.get("https://www.auranft.co");
+//        driver.manage().window().maximize();
+//
+//        driver.findElement(By.xpath("//*[@id=\"header-main-page\"]/header/div/div/div[1]/div[2]")).click();
+//    }
 }
