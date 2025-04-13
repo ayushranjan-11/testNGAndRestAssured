@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-13T17:51:38 IST" name="Default suite" finished-at="2025-04-13T17:51:51 IST" duration-ms="12082">
+  <suite started-at="2025-04-13T21:01:44 IST" name="Default suite" finished-at="2025-04-13T21:01:44 IST" duration-ms="19">
     <groups>
     </groups>
-    <test started-at="2025-04-13T17:51:38 IST" name="Default test" finished-at="2025-04-13T17:51:51 IST" duration-ms="12082">
-      <class name="learning.TestClassOne">
-        <test-method signature="openGoogle()[pri:0, instance:learning.TestClassOne@f316aeb]" started-at="2025-04-13T17:51:39 IST" name="openGoogle" finished-at="2025-04-13T17:51:51 IST" duration-ms="12066" status="PASS">
+    <test started-at="2025-04-13T21:01:44 IST" name="Default test" finished-at="2025-04-13T21:01:44 IST" duration-ms="19">
+      <class name="newLearning.TestNGLearning">
+        <test-method is-config="true" signature="methodBeforeClass()[pri:0, instance:newLearning.TestNGLearning@6dc17b83]" started-at="2025-04-13T21:01:44 IST" name="methodBeforeClass" finished-at="2025-04-13T21:01:44 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openGoogle -->
-      </class> <!-- learning.TestClassOne -->
+        </test-method> <!-- methodBeforeClass -->
+        <test-method signature="methodOne()[pri:0, instance:newLearning.TestNGLearning@6dc17b83]" started-at="2025-04-13T21:01:44 IST" name="methodOne" finished-at="2025-04-13T21:01:44 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodOne -->
+      </class> <!-- newLearning.TestNGLearning -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

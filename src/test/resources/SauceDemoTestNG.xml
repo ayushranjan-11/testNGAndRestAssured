@@ -1,66 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" allow-return-values="true">
-    <parameter name="url" value="https://www.saucedemo.com/"/>
-    <!--    For return methods to run need to add <suite allow-return-values="true"> here or under <test>-->
-    <!--    <parameter name="browserSelected" value="Chrome"/>-->
-    <test name="loginConfirmation">
-        <!--        This way we can perform cross browser testing-->
-        <!--        <parameter name="browserSelected" value="Chrome"/>-->
-        <classes>
-            <class name="learning.sauceDemo">
-                <methods>
-                    <!--<parameter name="url" value="https://www.saucedemos.com/inventory.html"/>-->
-                    <!--This defines the precedence of the parameter, method defined parameter will have more -->
-                    <!--precedence than suites level defined precedence when name of the parameter matches as same-->
-                    <include name="provideLoginCredentialsAndLogin"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="SauceDemoTestNGLoginAndVerify">
-        <!--        This way we can perform cross browser testing-->
-        <parameter name="browserSelected" value="Firefox"/>
-        <classes>
-            <class name="learning.sauceDemo">
-                <methods>
-                    <parameter name="url" value="https://www.saucedemo.com/inventory.html"/>
-                    <include name="provideLoginCredentialsAndLogin"/>
-                    <include name="verifySuccessfulLogin"/>
-                    <include name="verifySuccessfulLoginWithReturn"/>
-                    <!--Running this include(method) will be ignored from TestNG as this has return type, not void
-                    If needed to run this method also, then XML file should have allow-return-values="true" either
-                    with suites level or test where method is called-->
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <!--    This test(javaCodeTest) was created to check and learn of different class of different packages can run under single testNG file-->
-    <test name="javaCodeTest">
-        <!--        This way we can perform cross browser testing-->
-        <!--        <parameter name="browserSelected" value="Chrome"/>-->
-        <classes>
-            <class name="randomCodes.TestJavaClass">
-                <methods>
-                    <parameter name="integerOne" value="1"/>
-                    <parameter name="integerTwo" value="2"/>
-                    <include name="twoNumberAdd"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <!--    Replica of above test case just to demonstrate enabled="false" functionality of test cases in xml file-->
-    <test name="javaCodeTestTwo" enabled="false">
-        <!--        This way we can perform cross browser testing-->
-        <!--        <parameter name="browserSelected" value="Chrome"/>-->
-        <classes>
-            <class name="randomCodes.TestJavaClass">
-                <methods>
-                    <parameter name="integerOne" value="1"/>
-                    <parameter name="integerTwo" value="2"/>
-                    <include name="twoNumberAdd"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+	<parameter name="url" value="https://www.saucedemo.com/" />
+	<!-- For return methods to run need to add <suite allow-return-values="true"> 
+		here or under <test> -->
+	<!-- <parameter name="browserSelected" value="Chrome"/> -->
+	<test name="loginConfirmation">
+		<!-- This way we can perform cross browser testing -->
+		<!-- <parameter name="browserSelected" value="Chrome"/> -->
+		<classes>
+			<class name="learning.sauceDemo">
+				<methods>
+					<!--<parameter name="url" value="https://www.saucedemos.com/inventory.html"/> -->
+					<!--This defines the precedence of the parameter, method defined parameter 
+						will have more -->
+					<!--precedence than suites level defined precedence when name of the 
+						parameter matches as same -->
+					<include name="provideLoginCredentialsAndLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="SauceDemoTestNGLoginAndVerify">
+		<!-- This way we can perform cross browser testing -->
+		<parameter name="browserSelected" value="Firefox" />
+		<classes>
+			<class name="learning.sauceDemo">
+				<methods>
+					<parameter name="url"
+						value="https://www.saucedemo.com/inventory.html" />
+					<include name="provideLoginCredentialsAndLogin" />
+					<include name="verifySuccessfulLogin" />
+					<include name="verifySuccessfulLoginWithReturn" />
+					<!--Running this include(method) will be ignored from TestNG as this 
+						has return type, not void If needed to run this method also, then XML file 
+						should have allow-return-values="true" either with suites level or test where 
+						method is called -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- This test(javaCodeTest) was created to check and learn of different 
+		class of different packages can run under single testNG file -->
+	<test name="javaCodeTest">
+		<!-- This way we can perform cross browser testing -->
+		<!-- <parameter name="browserSelected" value="Chrome"/> -->
+		<classes>
+			<class name="randomCodes.TestJavaClass">
+				<methods>
+					<parameter name="integerOne" value="1" />
+					<parameter name="integerTwo" value="2" />
+					<include name="twoNumberAdd" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Replica of above test case just to demonstrate enabled="false" functionality 
+		of test cases in xml file -->
+	<test name="javaCodeTestTwo" enabled="false">
+		<!-- This way we can perform cross browser testing -->
+		<!-- <parameter name="browserSelected" value="Chrome"/> -->
+		<classes>
+			<class name="randomCodes.TestJavaClass">
+				<methods>
+					<parameter name="integerOne" value="1" />
+					<parameter name="integerTwo" value="2" />
+					<include name="twoNumberAdd" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>
