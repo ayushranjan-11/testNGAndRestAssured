@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" allow-return-values="true">
 	<parameter name="url" value="https://www.saucedemo.com/" />
-	<!-- For return methods to run need to add <suite allow-return-values="true"> 
+	<!-- For return methods to run need to add <suite
+	allow-return-values="true"> 
 		here or under <test> -->
 	<!-- <parameter name="browserSelected" value="Chrome"/> -->
 	<test name="loginConfirmation">
@@ -55,7 +56,8 @@
 			</class>
 		</classes>
 	</test>
-	<!-- Replica of above test case just to demonstrate enabled="false" functionality 
+	<!-- Replica of above test case just to demonstrate enabled="false"
+	functionality 
 		of test cases in xml file -->
 	<test name="javaCodeTestTwo" enabled="false">
 		<!-- This way we can perform cross browser testing -->

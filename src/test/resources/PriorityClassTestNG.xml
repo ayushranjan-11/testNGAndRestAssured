@@ -1,58 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="Priority Class TestNG 0">
-        <parameter name="integerOne" value="1"/>
-        <parameter name="integerTwo" value="2"/>
-        <!--        This test is example for how to mention and call groups(single or multiple) through XML file-->
-        <!--        <groups>-->
-        <!--            <run>-->
-        <!--                <include name="TestOne"/>-->
-        <!--                &lt;!&ndash;                <exclude name="TestTwo"/>-->
-        <!--                                   <exclude> tag is used for groups to exclude while running test&ndash;&gt;-->
-        <!--            </run>-->
-        <!--        </groups>-->
-        <groups>
-            <dependencies>
-                <group name="TestTwo" depends-on="TestOne"/>
-<!--                Here on above this is an example of how to create groups of groups dependency on DataProviderClassTestNG.xml file
+	<test name="Priority Class TestNG 0">
+		<parameter name="integerOne" value="1" />
+		<parameter name="integerTwo" value="2" />
+		<!--        This test is example for how to mention and call groups(single or
+		multiple) through XML file-->
+		<!--        <groups>-->
+		<!--            <run>-->
+		<!--                <include name="TestOne"/>-->
+		<!--                &lt;!&ndash;                <exclude name="TestTwo"/>-->
+		<!--                                   <exclude> tag is used for groups to exclude while running
+		test&ndash;&gt;-->
+		<!--            </run>-->
+		<!--        </groups>-->
+		<groups>
+			<dependencies>
+				<group name="TestTwo" depends-on="TestOne" />
+				<!--                Here on above this is an example of how to create groups of
+				groups dependency on DataProviderClassTestNG.xml file
                     depends-on named group's method will be executed then name named group will.
                     We can also have multiple groups tag for groups of groups-->
-            </dependencies>
-        </groups>
-        <classes>
-            <!--This way we can run whole methods from the class-->
-            <class name="randomCodes.PriorityInTestNG"/>
-            <class name="randomCodes.TestJavaClass"/>
-        </classes>
-    </test>
-    <!--    This test tag below is for groups of groups execution-->
-    <test name="Priority Class TestNG 1">
-        <parameter name="integerOne" value="1"/>
-        <parameter name="integerTwo" value="2"/>
-        <groups>
-            <!--            Define used to group the groups and run them-->
-            <define name="metaGroupOne">
-                <include name="TestOne"/>
-                <include name="TestTwo"/>
-            </define>
-            <run>
-                <include name="metaGroupOne"/>
-            </run>
-        </groups>
-        <classes>
-            <!--This way we can run whole methods from the class-->
-            <class name="randomCodes.PriorityInTestNG"/>
-            <class name="randomCodes.TestJavaClass"/>
-        </classes>
-    </test>
-    <test name="Priority Class TestNG 2">
-        <parameter name="integerOne" value="1"/>
-        <parameter name="integerTwo" value="2"/>
-        <classes>
-            <!--This way we can run whole methods from the class-->
-            <class name="randomCodes.PriorityInTestNG"/>
-            <class name="randomCodes.TestJavaClass"/>
-        </classes>
-    </test>
+			</dependencies>
+		</groups>
+		<classes>
+			<!--This way we can run whole methods from the class-->
+			<class name="randomCodes.PriorityInTestNG" />
+			<class name="randomCodes.TestJavaClass" />
+		</classes>
+	</test>
+	<!--    This test tag below is for groups of groups execution-->
+	<test name="Priority Class TestNG 1">
+		<parameter name="integerOne" value="1" />
+		<parameter name="integerTwo" value="2" />
+		<groups>
+			<!--            Define used to group the groups and run them-->
+			<define name="metaGroupOne">
+				<include name="TestOne" />
+				<include name="TestTwo" />
+			</define>
+			<run>
+				<include name="metaGroupOne" />
+			</run>
+		</groups>
+		<classes>
+			<!--This way we can run whole methods from the class-->
+			<class name="randomCodes.PriorityInTestNG" />
+			<class name="randomCodes.TestJavaClass" />
+		</classes>
+	</test>
+	<test name="Priority Class TestNG 2">
+		<parameter name="integerOne" value="1" />
+		<parameter name="integerTwo" value="2" />
+		<classes>
+			<!--This way we can run whole methods from the class-->
+			<class name="randomCodes.PriorityInTestNG" />
+			<class name="randomCodes.TestJavaClass" />
+		</classes>
+	</test>
 </suite>
