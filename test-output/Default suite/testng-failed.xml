@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="learning.TestClassOne">
+      <class name="learning.DataProviderClass">
         <methods>
-          <include name="openAura"/>
+          <include name="launchWebsite"/>
+          <include name="loginToWebsite"/>
+          <include name="browserQuit"/>
         </methods>
-      </class> <!-- learning.TestClassOne -->
+      </class> <!-- learning.DataProviderClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

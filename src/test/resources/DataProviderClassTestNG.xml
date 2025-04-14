@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="DataProviderClassTestSuite">
-    <parameter name="url" value="https://www.saucedemo.com/"/>
-    <test verbose="2" preserve-order="true" name="LoginTestWithDataProvider">
-        <classes>
-            <class name="learning.DataProviderClass">
-            </class>
-        </classes>
-    </test>
+	<parameter name="url" value="https://www.saucedemo.com/" />
+	<test verbose="2" preserve-order="true" name="LoginTestWithDataProvider">
+		<classes>
+			<class name="learning.DataProviderClass">
+			</class>
+		</classes>
+	</test>
 </suite>
