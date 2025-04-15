@@ -1,5 +1,6 @@
 package newLearning;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Parameters;
@@ -16,6 +17,10 @@ public class LoginHRM {
 	}
 
 	void getUsernameAndPassword() {
-
+		String usernameTextXpath = "//p[@class='oxd-text oxd-text--p'][1]";
+		String passwordTextXpath = "//p[@class='oxd-text oxd-text--p'][2]";
+		
+		String username = driver.findElement(By.xpath(usernameTextXpath)).getText();
+		String password = driver.findElement(By.xpath(passwordTextXpath)).getText();
 	}
 }
