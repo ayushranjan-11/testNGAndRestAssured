@@ -5,10 +5,8 @@
 		<classes>
 			<class name="newLearning.LoginHRM">
 				<parameter name="loginPageURL"
-					value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+					value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
 			</class>
 		</classes>
-	</test> <!--
-	LoginHRM -->
-</suite> <!--
-Suite -->
+	</test> <!-- LoginHRM -->
+</suite> <!-- Suite -->
