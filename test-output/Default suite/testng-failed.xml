@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="learning.DataProviderClass">
+      <class name="newLearning.LoginHRM">
         <methods>
-          <include name="launchWebsite"/>
-          <include name="loginToWebsite"/>
-          <include name="browserQuit"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowserAndRedirect"/>
         </methods>
-      </class> <!-- learning.DataProviderClass -->
+      </class> <!-- newLearning.LoginHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
