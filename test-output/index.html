@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\ayush\git\testNGAndRestAssured\src\test\testngfiles\LoginHRM.xml</span>
+                    <span>C:\Users\ayush\git\testNGAndRestAssured\src\test\testngfiles\OrangeHRM.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -108,7 +108,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="newLearning.LoginHRM" class="method navigator-link" hash-for-method="getUsernameAndPassword">getUsernameAndPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="newLearning.LoginHRM" class="method navigator-link" hash-for-method="loginVerification">loginVerification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,9 +144,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getUsernameAndPassword">
-                  </a> <!-- getUsernameAndPassword -->
-                  <span class="method-name">getUsernameAndPassword</span>
+                  <a name="loginVerification">
+                  </a> <!-- loginVerification -->
+                  <span class="method-name">loginVerification</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -162,22 +162,20 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ayush\git\testNGAndRestAssured\src\test\testngfiles\LoginHRM.xml</span>
+            <span class="header-content">C:\Users\ayush\git\testNGAndRestAssured\src\test\testngfiles\OrangeHRM.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginHRM&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRM&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;newLearning.LoginHRM&quot;&gt;
-        &lt;parameter name=&quot;password&quot; value=&quot;admin123&quot;/&gt;
         &lt;parameter name=&quot;loginPageURL&quot; value=&quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;/&gt;
-        &lt;parameter name=&quot;username&quot; value=&quot;Admin&quot;/&gt;
       &lt;/class&gt; &lt;!-- newLearning.LoginHRM --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginHRM --&gt;
+  &lt;/test&gt; &lt;!-- OrangeHRM --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,7 +187,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginHRM (1 class)</span>
+                <span class="test-name">OrangeHRM (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,15 +217,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openBrowserAndRedirect')
 data.setCell(0, 2, 'newLearning.LoginHRM')
-data.setCell(0, 3, 2607);
+data.setCell(0, 3, 2517);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getUsernameAndPassword')
+data.setCell(1, 1, 'loginVerification')
 data.setCell(1, 2, 'newLearning.LoginHRM')
-data.setCell(1, 3, 603);
+data.setCell(1, 3, 963);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LoginIntoPage')
 data.setCell(2, 2, 'newLearning.LoginHRM')
-data.setCell(2, 3, 124);
+data.setCell(2, 3, 151);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -264,16 +262,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getUsernameAndPassword</span>
-                <span class="method-start">2613 ms</span>
+                <span class="method-name">LoginIntoPage(Admin, admin123)</span>
+                <span class="method-start">3117 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">LoginIntoPage(Admin, admin123)</span>
-                <span class="method-start">3218 ms</span>
+                <span class="method-name">loginVerification</span>
+                <span class="method-start">3269 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">3345 ms</span>
+                <span class="method-start">4234 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

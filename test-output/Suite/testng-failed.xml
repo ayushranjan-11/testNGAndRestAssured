@@ -4,12 +4,10 @@
   <test thread-count="5" name="LoginHRM(failed)">
     <classes>
       <class name="newLearning.LoginHRM">
-        <parameter name="password" value="admin123"/>
         <parameter name="loginPageURL" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
-        <parameter name="username" value="Admin"/>
         <methods>
-          <include name="LoginIntoPage" invocation-numbers="0"/>
           <include name="closeBrowser"/>
+          <include name="loginVerification"/>
         </methods>
       </class> <!-- newLearning.LoginHRM -->
     </classes>

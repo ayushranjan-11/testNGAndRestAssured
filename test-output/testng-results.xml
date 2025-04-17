@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-15T15:21:31 IST" name="Suite" finished-at="2025-04-15T15:21:36 IST" duration-ms="4598">
+  <suite started-at="2025-04-17T11:14:22 IST" name="Suite" finished-at="2025-04-17T11:14:27 IST" duration-ms="5416">
     <groups>
     </groups>
-    <test started-at="2025-04-15T15:21:31 IST" name="LoginHRM" finished-at="2025-04-15T15:21:36 IST" duration-ms="4598">
+    <test started-at="2025-04-17T11:14:22 IST" name="OrangeHRM" finished-at="2025-04-17T11:14:27 IST" duration-ms="5416">
       <class name="newLearning.LoginHRM">
-        <test-method signature="openBrowserAndRedirect(java.lang.String)[pri:1, instance:newLearning.LoginHRM@4cf8b2dc]" started-at="2025-04-15T15:21:31 IST" name="openBrowserAndRedirect" finished-at="2025-04-15T15:21:34 IST" duration-ms="2607" status="PASS">
+        <test-method signature="openBrowserAndRedirect(java.lang.String)[pri:1, instance:newLearning.LoginHRM@2101b44a]" started-at="2025-04-17T11:14:22 IST" name="openBrowserAndRedirect" finished-at="2025-04-17T11:14:25 IST" duration-ms="2517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserAndRedirect -->
-        <test-method signature="getUsernameAndPassword()[pri:2, instance:newLearning.LoginHRM@4cf8b2dc]" started-at="2025-04-15T15:21:34 IST" name="getUsernameAndPassword" finished-at="2025-04-15T15:21:35 IST" duration-ms="603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUsernameAndPassword -->
-        <test-method signature="LoginIntoPage(java.lang.String,java.lang.String)[pri:3, instance:newLearning.LoginHRM@4cf8b2dc]" started-at="2025-04-15T15:21:35 IST" name="LoginIntoPage" finished-at="2025-04-15T15:21:35 IST" duration-ms="124" status="PASS">
+        <test-method signature="LoginIntoPage(java.lang.String,java.lang.String)[pri:3, instance:newLearning.LoginHRM@2101b44a]" started-at="2025-04-17T11:14:25 IST" name="LoginIntoPage" data-provider="usernameAndPassword" finished-at="2025-04-17T11:14:25 IST" duration-ms="151" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,11 +34,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginIntoPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:newLearning.LoginHRM@4cf8b2dc]" started-at="2025-04-15T15:21:35 IST" name="closeBrowser" finished-at="2025-04-15T15:21:36 IST" duration-ms="1236" status="PASS">
+        <test-method signature="loginVerification()[pri:4, instance:newLearning.LoginHRM@2101b44a]" started-at="2025-04-17T11:14:25 IST" name="loginVerification" finished-at="2025-04-17T11:14:26 IST" duration-ms="963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:newLearning.LoginHRM@2101b44a]" started-at="2025-04-17T11:14:26 IST" name="closeBrowser" finished-at="2025-04-17T11:14:27 IST" duration-ms="1168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- newLearning.LoginHRM -->
-    </test> <!-- LoginHRM -->
+    </test> <!-- OrangeHRM -->
   </suite> <!-- Suite -->
 </testng-results>

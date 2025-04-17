@@ -5,6 +5,7 @@
     <classes>
       <class name="newLearning.LoginHRM">
         <methods>
+          <include name="LoginIntoPage"/>
           <include name="closeBrowser"/>
           <include name="openBrowserAndRedirect"/>
         </methods>
