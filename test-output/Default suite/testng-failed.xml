@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="newLearning.LoginHRM">
+      <class name="randomCodes.TestJavaClass">
         <methods>
-          <include name="LoginIntoPage"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowserAndRedirect"/>
+          <include name="twoNumberAdd"/>
         </methods>
-      </class> <!-- newLearning.LoginHRM -->
+      </class> <!-- randomCodes.TestJavaClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
