@@ -10,8 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.Assertion;
+
+import com.aventstack.chaintest.plugins.ChainTestListener;
+
 import org.testng.annotations.*;
 
+//@Listeners(ChainTestListener.class)
 public class LoginHRM {
 	WebDriver driver = new ChromeDriver();
 	WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -48,7 +52,8 @@ public class LoginHRM {
 		String[] passwordExtract = password.split(":");
 		password = passwordExtract[1].trim();
 
-		System.out.println(username + "\n" + password);
+		ChainTestListener.log("Extracted username and password is: " + username + " & " + password);
+		// System.out.println(username + "\n" + password);
 
 		Object[][] objects = new Object[1][2];
 		objects[0][0] = username;
@@ -62,6 +67,7 @@ public class LoginHRM {
 	void LoginIntoPage(String username, String password) {
 
 		driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(usernameInputFieldXpath)));
+		ChainTestListener.log("Logging with fetched username: " + username + " & password: " + password);
 
 		driver.findElement(By.xpath(usernameInputFieldXpath)).sendKeys(username);
 		driver.findElement(By.xpath(passwordInputFieldXpath)).sendKeys(password);
@@ -75,6 +81,8 @@ public class LoginHRM {
 		Assertion assertion = new Assertion();
 
 		// It will fail the test run if the match is not successful
+		ChainTestListener.log("Verifying navigated URL with actual. Expected URL is:" + expectedDashboardURL
+				+ " and actual URL is: " + driver.getCurrentUrl());
 		assertion.assertEquals(driver.getCurrentUrl(), expectedDashboardURL);
 
 	}

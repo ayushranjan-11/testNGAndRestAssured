@@ -36,5 +36,19 @@
 			<version>4.31.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.aventstack/chaintest-testng -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>chaintest-testng</artifactId>
+			<version>1.0.12</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/chaintest-core -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>chaintest-core</artifactId>
+			<version>1.0.12</version>
+		</dependency>
+
 	</dependencies>
 </project>
