@@ -15,7 +15,7 @@ import com.aventstack.chaintest.plugins.ChainTestListener;
 
 import org.testng.annotations.*;
 
-//@Listeners(ChainTestListener.class)
+@Listeners(ChainTestListener.class)
 public class LoginHRM {
 	WebDriver driver = new ChromeDriver();
 	WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofSeconds(10));

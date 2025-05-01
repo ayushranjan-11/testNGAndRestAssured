@@ -7,6 +7,8 @@
 	</listeners>
 	<test thread-count="5" name="OrangeHRM">
 		<classes>
+			<!-- <class name="newLearning.TestNGLearning"/> -->
+			<class name="newLearning.ClassForParallelExecution" />
 			<class name="newLearning.LoginHRM">
 				<parameter name="loginPageURL"
 					value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
